@@ -10,13 +10,15 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { EcopointsListComponent } from './ecopoints-list/ecopoints-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    EcopointsListComponent
   ],
   imports: [
     BrowserModule,
