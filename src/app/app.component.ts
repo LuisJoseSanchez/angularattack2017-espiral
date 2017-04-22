@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello world!';
+
+  sayHello(): void {
+    this.title = "You clicked the button!";
+  }
 }
