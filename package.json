@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@progress/kendo-angular-buttons": "^0.24.0",
+    "@progress/kendo-angular-l10n": "^0.3.0",
     "@progress/kendo-theme-default": "^2.31.3",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
