@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -11,16 +11,19 @@ import { AppComponent } from './app.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridModule } from '@progress/kendo-angular-grid';
 
+// Import Angular Google Maps
+import {AgmCoreModule} from '@agm/core';
+
 // Custom components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EcopointsListComponent } from './ecopoints-list/ecopoints-list.component';
-
-// Custom service
-import { EcopointsService } from './model/ecopoints.service';
 import { EcopointsMapComponent } from './ecopoints-map/ecopoints-map.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
+
+// Custom service
+import { EcopointsService } from './model/ecopoints.service';
 
 const appRoutes: Routes = [
 
@@ -72,9 +75,13 @@ const appRoutes: Routes = [
     HttpModule,
     ButtonsModule,
     GridModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDAcVQLU6eB7BeZhYYQ3E0uPjdjLYEghrA'
+    })
   ],
   providers: [EcopointsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:  [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
