@@ -15,6 +15,7 @@ export class EcopointsService {
         "address": "C/ Tomás Heredia",
         latitude: 36.717300,
         longitude: -4.423480,
+        icon: "intlight.png",
         picture: ""
       },
 
@@ -25,6 +26,7 @@ export class EcopointsService {
         "address": "Calle Pacífico",
         latitude: 36.688162,
         longitude: -4.444187,
+        icon: "windpower.png",
         picture: ""
       }
 

@@ -10,12 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class EcopointsListComponent implements OnInit {
 
   ecoPoints: EcoPoint[];
+  gridData: any[];
 
   constructor(public ecoPointsService: EcopointsService) {
   }
 
   ngOnInit() {
-    this.ecoPoints = this.ecoPointsService.allEcoPoints();
+    this.gridData = this.ecoPoints = this.ecoPointsService.allEcoPoints();
   }
 
 }
