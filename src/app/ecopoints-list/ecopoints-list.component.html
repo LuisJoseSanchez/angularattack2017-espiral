@@ -1,11 +1,12 @@
-<h1>EcoPoints list</h1>
-
+<!--<h1>EcoPoints list</h1>-->
+<br><br>
 <kendo-grid [data]="gridData" [height]="400">
   <kendo-grid-column field="id" title="ID" width="40">
   </kendo-grid-column>
   <kendo-grid-column field="type" title="Type">
     <ng-template kendoGridCellTemplate let-dataItem>
       <img src="./assets/{{dataItem.icon}}" alt="" width="60">
+      &nbsp;
       {{dataItem.type}}
     </ng-template>
   </kendo-grid-column>
@@ -13,11 +14,4 @@
   </kendo-grid-column>
   <kendo-grid-column field="address" title="Address">
   </kendo-grid-column>
-  <!--
-  <kendo-grid-column field="Discontinued" title="Discontinued">
-    <ng-template kendoGridCellTemplate let-dataItem>
-        <input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
-    </ng-template>
-  </kendo-grid-column>
-  -->
 </kendo-grid>
