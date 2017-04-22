@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 // Import the KendoUI components...
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { GridModule } from '@progress/kendo-angular-grid';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ButtonsModule
+    ButtonsModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
