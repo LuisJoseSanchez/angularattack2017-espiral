@@ -1,3 +1,5 @@
+import { EcoPoint } from './../model/EcoPoint';
+import { EcopointsService } from './../model/ecopoints.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EcopointsListComponent implements OnInit {
 
-  constructor() { }
+  ecoPoints: EcoPoint[];
+
+  constructor(public ecoPointsService: EcopointsService) {
+  }
 
   ngOnInit() {
+    this.ecoPoints = this.ecoPointsService.allEcoPoints();
   }
 
 }

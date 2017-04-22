@@ -16,6 +16,16 @@ export class EcopointsService {
         latitude: 36.717300,
         longitude: -4.423480,
         picture: ""
+      },
+
+      {
+        "id": 2,
+        "type": "wind-power generator",
+        "description": "Generate electricity from the wind.",
+        "address": "Calle Pacífico",
+        latitude: 36.688162,
+        longitude: -4.444187,
+        picture: ""
       }
 
     ];

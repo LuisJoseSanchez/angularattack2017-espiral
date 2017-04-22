@@ -8,10 +8,14 @@ import { AppComponent } from './app.component';
 // Import the KendoUI components...
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridModule } from '@progress/kendo-angular-grid';
+
+// Custom components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EcopointsListComponent } from './ecopoints-list/ecopoints-list.component';
 
+// Custom service
+import { EcopointsService } from './model/ecopoints.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,7 @@ import { EcopointsListComponent } from './ecopoints-list/ecopoints-list.componen
     ButtonsModule,
     GridModule
   ],
-  providers: [],
+  providers: [EcopointsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
