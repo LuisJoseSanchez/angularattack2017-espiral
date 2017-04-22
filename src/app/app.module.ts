@@ -46,6 +46,10 @@ const appRoutes: Routes = [
     component: EcopointsMapComponent
   },
   {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
     path: '**',
     redirectTo: ''
   }
