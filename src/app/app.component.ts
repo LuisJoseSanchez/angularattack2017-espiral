@@ -1243,7 +1243,7 @@ products = [{
     }
 }];
 
-  private gridData: any[] = this.products;
+  gridData: any[] = this.products;
 
 
 
