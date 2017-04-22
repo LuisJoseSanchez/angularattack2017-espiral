@@ -1,11 +1,21 @@
 <div class="container">
-  <agm-map [latitude]="lat" [longitude]="lon">
+  <agm-map [latitude]="lat" [longitude]="lon" [zoom]="12">
     <div class="ng-container" *ngFor="let ep of ecoPoints">
-      <agm-marker [latitude]="ep.latitude" [longitude]="ep.longitude" [iconUrl]="'./assets/ecopoint.png'"></agm-marker>
+      <agm-marker
+        [latitude]="ep.latitude"
+        [longitude]="ep.longitude"
+        [iconUrl]="'./assets/' + ep.icon + '_marker.png'">
+        <agm-info-window>
+           <img src="./assets/{{ep.icon}}.png" alt="" width="40"><br>
+           <strong>Ecopoint: </strong>{{ep.description}}<br>
+           <strong>Address: </strong>{{ep.address}}
+        </agm-info-window>
+      </agm-marker>
     </div>
   </agm-map>
 </div>
-
+<!--
 <div class="ng-container" *ngFor="let ep of ecoPoints">
       {{ep.latitude}} - {{ep.longitude}}
 </div>
+-->

@@ -15,7 +15,7 @@ export class EcopointsService {
         "address": "C/ Tomás Heredia, Málaga",
         latitude: 36.717300,
         longitude: -4.423480,
-        icon: "light.png",
+        icon: "light",
         picture: ""
       },
 
@@ -26,7 +26,7 @@ export class EcopointsService {
         "address": "Calle Pacífico, Málaga",
         latitude: 36.688162,
         longitude: -4.444187,
-        icon: "windpower.png",
+        icon: "windpower",
         picture: ""
       },
 
@@ -37,7 +37,7 @@ export class EcopointsService {
         "address": "Calle Pacífico, Málaga",
         latitude: 36.692760,
         longitude: -4.440807,
-        icon: "light.png",
+        icon: "light",
         picture: ""
       },
 
@@ -48,7 +48,7 @@ export class EcopointsService {
         "address": "Calle Pacífico, Málaga",
         latitude: 36.693769,
         longitude: -4.440904,
-        icon: "light.png",
+        icon: "light",
         picture: ""
       },
 
@@ -59,7 +59,7 @@ export class EcopointsService {
         "address": "Calle Pacífico, Málaga",
         latitude: 36.693466,
         longitude: -4.440807,
-        icon: "carcharger.png",
+        icon: "carcharger",
         picture: ""
       },
 
@@ -70,7 +70,7 @@ export class EcopointsService {
         "address": "C/Jovellanos, Málaga",
         latitude: 36.712314,
         longitude: -4.429935,
-        icon: "parking.png",
+        icon: "parking",
         picture: ""
       },
 
@@ -81,7 +81,7 @@ export class EcopointsService {
         "address": "Avenida Sor Teresa Prat, 15 Málaga",
         latitude: 36.699961,
         longitude: -4.439399,
-        icon: "zem2all.png",
+        icon: "zem2all",
         picture: ""
       },
 
@@ -92,7 +92,7 @@ export class EcopointsService {
         "address": "Avenida Comandante García Morato, 29004 Málaga",
         latitude: 36.668970,
         longitude: -4.482336,
-        icon: "carcharger.png",
+        icon: "carcharger",
         picture: ""
       },
 
@@ -103,7 +103,7 @@ export class EcopointsService {
         "address": "Avenida Santa Rosa de Lima, 20-22, 29007 Málaga",
         latitude: 36.720431,
         longitude: -4.449527,
-        icon: "carcharger.png",
+        icon: "carcharger",
         picture: ""
       },
 
@@ -114,7 +114,7 @@ export class EcopointsService {
         "address": "Avenida Andalucía, 6, 29007 Málaga",
         latitude: 36.717456,
         longitude: -4.449527,
-        icon: "carcharger.png",
+        icon: "carcharger",
         picture: ""
       },
 
@@ -125,7 +125,7 @@ export class EcopointsService {
         "address": "Avenida Alonso Carrillo De Albornoz s/n, 29017",
         latitude: 36.720316,
         longitude: -4.360953,
-        icon: "carcharger.png",
+        icon: "carcharger",
         picture: ""
       }
 
