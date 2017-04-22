@@ -19,6 +19,8 @@ import { EcopointsListComponent } from './ecopoints-list/ecopoints-list.componen
 // Custom service
 import { EcopointsService } from './model/ecopoints.service';
 import { EcopointsMapComponent } from './ecopoints-map/ecopoints-map.component';
+import { AboutComponent } from './about/about.component';
+import { MenuComponent } from './menu/menu.component';
 
 const appRoutes: Routes = [
 
@@ -56,7 +58,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     EcopointsListComponent,
-    EcopointsMapComponent
+    EcopointsMapComponent,
+    AboutComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
