@@ -1,5 +1,11 @@
-.agm-map, .sebm-google-map-container {
-  border: 2px solid black;
-  width: 800px !important;
-  height: 400px !important;
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
 }
+
+.agm-map, .sebm-google-map-container {
+  width: 900px;
+  height: 600px;
+}
+

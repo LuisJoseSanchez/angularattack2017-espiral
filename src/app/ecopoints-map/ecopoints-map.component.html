@@ -1,6 +1,11 @@
-<p>
-  ecopoints-map works!
-</p>
-<agm-map [latitude]="lat" [longitude]="lon">
-  <agm-marker [latitude]="lat" [longitude]="lon" [iconUrl]="'./assets/ecopoint.png'"></agm-marker>-->
-</agm-map>
+<div class="container">
+  <agm-map [latitude]="lat" [longitude]="lon">
+    <div class="ng-container" *ngFor="let ep of ecoPoints">
+      <agm-marker [latitude]="ep.latitude" [longitude]="ep.longitude" [iconUrl]="'./assets/ecopoint.png'"></agm-marker>
+    </div>
+  </agm-map>
+</div>
+
+<div class="ng-container" *ngFor="let ep of ecoPoints">
+      {{ep.latitude}} - {{ep.longitude}}
+</div>
