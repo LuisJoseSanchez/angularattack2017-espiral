@@ -127,6 +127,39 @@ export class EcopointsService {
         longitude: -4.360953,
         icon: "carcharger",
         picture: ""
+      },
+
+      {
+        "id": 17,
+        "type": "electric car charger",
+        "description": "Electric car charging station.",
+        "address": "Calle de la Explanada de la Estación, s/n Málaga",
+        latitude: 36.712008,
+        longitude: -4.431781,
+        icon: "carcharger",
+        picture: ""
+      },
+
+      {
+        "id": 18,
+        "type": "bus control center",
+        "description": "Bus control and information center.",
+        "address": "Camino de San Rafael, 97 Málaga",
+        latitude: 36.704181,
+        longitude: -4.453830,
+        icon: "bus",
+        picture: ""
+      },
+
+      {
+        "id": 19,
+        "type": "augmented reality",
+        "description": "Augmented reality: information about the city.",
+        "address": "Alameda Principal, Málaga",
+        latitude: 36.718006,
+        longitude: -4.422405,
+        icon: "ar",
+        picture: ""
       }
 
     ];
