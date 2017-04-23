@@ -30,11 +30,11 @@ import { EcopointsService } from './model/ecopoints.service';
 const appRoutes: Routes = [
   {
     path: '',
-    component: EcopointsListComponent
+    component: EcopointsMapComponent
   },
   {
-    path: 'ecopoints-map',
-    component: EcopointsMapComponent
+    path: 'ecopoints-list',
+    component: EcopointsListComponent
   },
   {
     path: 'about',
