@@ -171,6 +171,50 @@ export class EcopointsService {
         "longitude": -4.438889,
         "icon": "ecopoint",
         "picture": ""
+      },
+
+      {
+        "id": 25,
+        "type": "generic ecopoint",
+        "description": "Smarcity control center.",
+        "address": "Calle Pacífico, 57 Málaga",
+        "latitude": 36.693928,
+        "longitude": -4.440807,
+        "icon": "ecopoint",
+        "picture": ""
+      },
+
+      {
+        "id": 26,
+        "type": "generic ecopoint",
+        "description": "Environmental center Los Ruices. Biogas energy use.",
+        "address": "Carretera de los Asperones FASE 1, s/n (Finca de los Ruices) Málaga",
+        "latitude": 36.725113,
+        "longitude": -4.501242,
+        "icon": "ecopoint",
+        "picture": ""
+      },
+
+      {
+        "id": 30,
+        "type": "radiation meter",
+        "description": "Radiation meter.",
+        "address": "Avenida Isaac Peral ,23 Málaga",
+        "latitude": 36.695243,
+        "longitude": -4.456411,
+        "icon": "radiation",
+        "picture": ""
+      },
+
+      {
+        "id": 31,
+        "type": "radiation meter",
+        "description": "Radiation meter.",
+        "address": "Paseo de Antonio Machado, 12 Málaga",
+        "latitude": 36.710231,
+        "longitude": -4.427265,
+        "icon": "radiation",
+        "picture": ""
       }
 
     ];

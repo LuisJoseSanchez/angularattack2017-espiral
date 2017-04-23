@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EcopointsMapComponent implements OnInit {
 
-  lat: number = 36.693466;
-  lon: number = -4.440807;
+  lat: number = 36.720692;
+  lon: number = -4.427240;
 
   ecoPoints: EcoPoint[];
 
