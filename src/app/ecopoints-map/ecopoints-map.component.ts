@@ -9,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EcopointsMapComponent implements OnInit {
 
+  public listItems: Array<string> = [
+    "show all", "generic ecopoint", "lighting", "wind-power generator",
+    "electric car charger", "free parking", "zem2all", "bus control center",
+    "augmented reality", "radiation meter"];
+
+  //public value = ['All', 'Cricket'];
+  filter: string = "show all";
+
   lat: number = 36.720692;
   lon: number = -4.427240;
 
@@ -18,6 +26,10 @@ export class EcopointsMapComponent implements OnInit {
 
   ngOnInit() {
     this.ecoPoints = this.ecoPointsService.allEcoPoints();
+  }
+
+  changeFilter(value) {
+    this.filter = value;
   }
 
 }

@@ -1,21 +1,31 @@
-<div class="container">
-  <agm-map [latitude]="lat" [longitude]="lon" [zoom]="13">
-    <div class="ng-container" *ngFor="let ep of ecoPoints">
-      <agm-marker
-        [latitude]="ep.latitude"
-        [longitude]="ep.longitude"
-        [iconUrl]="'./assets/' + ep.icon + '_marker.png'">
-        <agm-info-window>
-           <img src="./assets/{{ep.icon}}.png" alt="" width="40"><br>
-           <strong>Ecopoint: </strong>{{ep.description}}<br>
-           <strong>Address: </strong>{{ep.address}}
-        </agm-info-window>
-      </agm-marker>
-    </div>
-  </agm-map>
+<br><br>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-2 example-col">
+    <p><strong>Filter ecopoints</strong></p>
+    <p>Click on the map icons for more information.</p>
+    <kendo-dropdownlist
+      [data]="listItems"
+      [value]="'show all'"
+      (valueChange)="changeFilter($event)">
+    </kendo-dropdownlist>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 example-col">
+    <agm-map [latitude]="lat" [longitude]="lon" [zoom]="13">
+      <div class="ng-container" *ngFor="let ep of ecoPoints">
+        <agm-marker
+          *ngIf="(ep.type == filter) || (filter == 'show all')"
+          [latitude]="ep.latitude"
+          [longitude]="ep.longitude"
+          [iconUrl]="'./assets/' + ep.icon + '_marker.png'">
+          <agm-info-window>
+            <img src="./assets/{{ep.icon}}.png" alt="" width="40"><br>
+            <strong>Ecopoint: </strong>{{ep.description}}<br>
+            <strong>Address: </strong>{{ep.address}}
+          </agm-info-window>
+        </agm-marker>
+      </div>
+    </agm-map>
+  </div>
 </div>
-<!--
-<div class="ng-container" *ngFor="let ep of ecoPoints">
-      {{ep.latitude}} - {{ep.longitude}}
-</div>
--->
