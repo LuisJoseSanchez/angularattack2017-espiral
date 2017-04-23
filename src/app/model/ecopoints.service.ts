@@ -165,7 +165,7 @@ export class EcopointsService {
       {
         "id": 22,
         "type": "generic ecopoint",
-        "description": "municipal communications network.",
+        "description": "Municipal communications network.",
         "address": "C/ Concejal Muñoz Cerván, 3 Málaga",
         "latitude": 36.697500,
         "longitude": -4.438889,

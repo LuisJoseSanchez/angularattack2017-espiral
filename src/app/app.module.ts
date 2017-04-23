@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 // Import the KendoUI components...
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
 // Import Angular Google Maps
 import {AgmCoreModule} from '@agm/core';
@@ -26,20 +27,6 @@ import { MenuComponent } from './menu/menu.component';
 import { EcopointsService } from './model/ecopoints.service';
 
 const appRoutes: Routes = [
-
-  /*
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'hero/:id',      component: HeroDetailComponent },
-  {
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }*/
   {
     path: '',
     component: EcopointsListComponent
@@ -75,6 +62,7 @@ const appRoutes: Routes = [
     HttpModule,
     ButtonsModule,
     GridModule,
+    DropDownsModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDAcVQLU6eB7BeZhYYQ3E0uPjdjLYEghrA'
